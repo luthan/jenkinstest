@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: kops.paulbenetis.com
   tasks:
   - name: Deploy the service
     k8s:
@@ -12,4 +12,3 @@
       validate_certs: no
       namespace: default
       definition: ""
-
